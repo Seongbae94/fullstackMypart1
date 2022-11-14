@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인 페이지</title>
+    <style>
+        .mytitle{
+            width: 400px;
+            height: 250px;
+
+            color: black;
+
+            text-align: center;
+            background-color: transparent;
+            background-size: cover;
+            background-position: center;
+            border: 2px solid black;
+            border-radius: 10px;
+
+            padding-top: 40px;
+
+                position: absolute;
+                top: 5%;
+                left: 50%;
+                transform: translate(-50%, 50%);
+
+        }
+            .warp{
+                width: 300px;
+                margin: auto;
+                border-radius: 50px;
+                border: 1px solid white;
+            }
+            .A{
+                margin-left: 120px;
+            }
+
+
+    </style>
+    <script>
+        function cancel() {
+                window.location.href = '/'
+        }
+        function register() {
+                window.location.href = '/register'
+        }
+    </script>
+</head>
+<body>
+    <div class="warp">
+        <div class="mytitle">
+            <h1>로그인</h1>
+            <p></p>
+            <p>ID: <input type="text"/></p>
+            <p>PW: <input type="text"/></p>
+            <button onclick="register()">회원가입</button>
+            <button class="A">로그인</button>
+            <button onclick="cancel()">취소</button>
+        </div>
+    </div>
+</body>
+</html>
